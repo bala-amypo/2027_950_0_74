@@ -1,7 +1,10 @@
 package com.example.demo.entity;
 
 public class student{
-    private int id;
+    @id
+    @Gen
+
+    private Integer id;
     private String name;
     private String email;
     
