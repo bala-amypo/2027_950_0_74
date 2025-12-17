@@ -3,7 +3,7 @@ import jakarta.persistence.*;
 
 
 @Entity
-public class student{
+public class Student{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
 
@@ -30,7 +30,7 @@ public class student{
         this.email=email;
     }
 
-    public student(Integer id,String name,String email){
+    public Student(Integer id,String name,String email){
         this.id=id;
         this.name=name;
         this.email=email;
