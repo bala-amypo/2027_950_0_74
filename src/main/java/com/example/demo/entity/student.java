@@ -1,17 +1,20 @@
 package com.example.demo.entity;
+import jakarta.persistence.*;
 
+
+@Entity
 public class student{
-    @id
-    @Gen
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
 
     private Integer id;
     private String name;
     private String email;
     
-    public int getId(){
+    public Integer getId(){
         return id;
     }
-    public void setId(int id){
+    public void setId(Integer id){
         this.id=id;
     }
     public String getName(){
@@ -27,7 +30,7 @@ public class student{
         this.email=email;
     }
 
-    public student(int id,String name,String email){
+    public student(Integer id,String name,String email){
         this.id=id;
         this.name=name;
         this.email=email;
